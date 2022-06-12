@@ -1,0 +1,419 @@
+<html>
+	<head>
+		<title>M Y  K O R E A N  L I F E</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				
+		<style>
+		<!--page 1-->
+		*
+		{
+			font-family:'Lucida Sans';
+			font-weight: bold;
+			color: #ffffff;
+		}
+		
+		.front{
+			position: relative; width: 100%; margin: 0 auto;			
+		}
+		
+		.centerText{
+			color: #FFFFF7;
+			position: absolute;
+			top: 30%; 
+			width: 100%; 
+			font-size: 500%;
+			text-align: center;
+		}
+		
+		body
+		{
+			margin: 0;
+			background-size: cover;
+			width: 100vw;
+			height: 100vh;
+		}
+		
+		a
+		{
+			text-decoration:none;
+			display: inline-block;
+			padding: 5px 10px;
+		}
+		
+		li
+		{
+			list-style: none;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		
+		h2
+		{
+			margin-top: 15px;
+			text-transform: uppercase;
+			margin-left: 20px;
+		}
+		
+		li:hover,.Home
+		{
+			border: 2px solid white;
+		}
+		
+		.navbar
+		{
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		ul
+		{
+			display: flex;
+		}
+
+		.contenu
+		{
+			display: flex;
+			justify-content: center;
+			height: 70%;
+			align-items: center;
+		}
+
+		article
+		{
+			width: 460px;
+			text-align: center;
+		}
+		
+		p
+		{	
+			font-size: 24px;
+		}
+		
+		input
+		{
+			padding: 12px;
+			border: none;
+			margin-bottom: 10px;
+			border-radius: 5px 10px;
+		}
+		
+		input[value="Explore More"]
+		{
+			background-color: teal;
+		}
+		
+		input[value="Watch Videos"]
+		{
+			color: black;
+			background-color: #ffffff;
+		}
+		
+		input[value="Watch Videos"]:hover
+		{	
+			background: linear-gradient(to right,white,rgb(230, 226, 206));  
+		}
+		
+		input[value="Explore More"]:hover
+		{
+			background: linear-gradient(to right,aqua,teal);  
+		}
+		
+		.divTotal
+		{
+			display: none;
+		}
+		
+		<!--page 4-->
+		@import url('https://fonts.googleapis.com/css?family=Raleway:100,400');
+		
+		body {
+			font-family: 'Raleway', sans-serif;
+			font-weight: thin;
+			background: black;
+		}
+		
+		body:after{
+			content: "";
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			margin: 0;
+			z-index: -1;
+			width: 200%;
+			height: 200%;
+			background: url('beach.jpg');
+			background-size: contain;
+			background-position: 600px -200px;
+			filter: blur(30px);
+		}
+		
+		.drama-card {
+			position: relative;
+			box-sizing: border-box;
+			width: 50%;
+			max-width: 800px;
+			height: 400px;
+			background-position: center;
+			background-size: cover;
+			margin: 4vh auto;
+			border-radius: 4px;
+			box-shadow: 2px 3px 12px rgba(0, 0, 0, .4);
+			color: white;
+			padding: 2vh 3%;
+		}
+		
+		.drama-card:after{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 4px;
+			background: linear-gradient(to right, rgba(40,40,60,1) 0%,rgba(40,0,60,0) 90%);
+			background-blend-mode: multiply;
+			will-change: transform;
+			z-index: 0;
+		}
+		
+		i {
+			font-size: .7em;
+			color: #ff5b84;
+		}
+		
+		h1 {
+			font-size: 175%;
+			position: relative;
+			z-index: 10;
+		}
+		
+		span {
+			display: inline-block;
+			position: relative;
+			z-index: 10;
+			margin-right: 80px;
+			color: rgb(210, 210, 210);
+		}
+		
+		.watch {
+			display: block;
+			border: 1px solid white;
+			border-radius: 4px;
+			position: relative;
+			z-index: 10;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			background: rgba(0, 0, 0, .3);
+			margin: 20px 0px;
+			outline: none;
+			box-shadow: 0 0 10px rgba(0,0,0,.5);
+			transition: all .2s;
+		}
+		
+		button:hover {
+			background: rgba(255, 255, 255, .8);
+			color: black;
+			box-shadow: 0 0 10px rgba(255,255,255,.5);
+			mix-blend-mode: screen;
+		}
+		
+		button:active {
+			transform: translateY(2px);
+		}
+		
+		p {
+			position: relative;
+			z-index: 10;
+			font-size: .9em;
+			width: 99%;
+			height: 20%;
+		}
+
+		@media (max-width: 768px) {
+			body {
+					/* background: none; */
+			}
+			
+			.drama-card {
+					width: 75%;
+					height: 200px;
+			}
+			
+			h1 {
+				font-size: 120%;
+			}
+			
+			p {
+				display: none;
+			/* overflow: hidden;
+				width: 100%;
+				height: 30%; */
+			}
+			
+			.watch {
+				margin: 5% auto;
+			}
+		}
+		
+		@media (max-width: 500px) {
+			.drama-card {
+			width: 100%;
+			}
+		}
+		
+		<!--header-->
+		#title{
+			align-self: center;
+			text-align: center;
+			font-family: "Segoe Print";
+			font-size: 50px;
+			background-color: #E79A9C;
+			
+		}
+		
+		#main{
+			text-align: center;
+			font-size: 25px;
+			
+	
+		}
+		
+		.section-header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10px; 
+			background: #2B547E;
+		}
+		
+		#img-div{
+			background: #DCD0FF;
+			font-family: "Sitka Banner";
+		 }
+		 
+		</style>
+	
+	</head>
+	
+	
+	<body>
+		<!--page 1-->
+		<header class="navbar">
+		<div class="LOGO"> 
+			<h2><a href="index.html" target="_blanck">하지라 ♡ ZIRA</a></h2>
+		</div>
+		
+        <nav>
+            <ul>
+                
+                <li><a href = "about.html"><i class="fa fa-user"></i> ABOUT </a></li>
+				<li><a href = "foody.html"><i class="fa fa-fire"></i> FOOD </a></li>
+				<li><a href = "kdrama.html"><i class="fa fa-heartbeat"></i> DRAMA </a></li>
+				<li><a href = "movie.html"><i class="fa fa-cloud"></i> MOVIE </a></li>
+				<li><a href = "registration.html"><i class="fa fa-envelope"></i> JOIN ME! </a></li>
+            </ul>
+        </nav>
+		
+        <div class="divTotal">  
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas"></i>  
+            </label>
+        </div>
+		</header>
+		
+		<!--header-->
+		<main id="main">
+			<h1 class="section-header"> KOREAN DRAMA </h1>
+			<p id="img-div" align="center"> Here are some Korean dramas that I really love to watch. The drama that I really liked to watch is goblin. This drama plot, the story really hit different and really touched the audience's eyes including me too. Other than that, in the drama there is an actor that I really love since I am 16 years old, which is Lee Dong Wook. So that’s why that drama left a very deep impression on me.
+					</p>
+		</main>
+		
+		
+		<!--page 4-->
+		<script>
+		var dramaDB = [
+           {title: "Goblin",
+            rating: 10,
+            runtime: 82,
+            synopsis: "Kim Shin is a goblin who is also a protector of souls. He lives together with an amnesiac grim reaper who is in charge of taking deceased souls. Together the two of them sees the dead off into the afterlife. Meanwhile, Ji Eun Tak is a high school student who despite her painful reality, remains optimistic. She ends up falling in love with the goblin.  Kim Sun is an owner of a chicken shop; a bright and attractive girl who is loved by all men.",
+            background: "url('Goblin.jpg')"
+           },
+		   
+           {title: "The King : External Monarch",
+            rating: 9,
+            runtime: 70,
+            synopsis: "Yi Gon is the third Korean emperor of his generation. His citizens regard him as the perfect leader. But behind this flawless appearance, hides a deep wound. When he was eight years old, his father was murdered before his eyes following a coup. Today, instead of respecting his filial duty, he prefers to escape the palace to attend university conferences. During one of his escapades, he sees himself propelled into a parallel world where he meets Jung Tae Eul, an inspector with whom he teams up with to defeat the criminals but also close the door between their two worlds.",
+            background: "url('the king_external monarch.jpg')"
+           },
+		   
+           {title: "Mouse",
+            rating: 9,
+            runtime: 75,
+            synopsis: "A crazed serial killer's ruthless murders have left the entire nation gripped with fear and chaos regins. Justice-seeking rookie police officer, Jung Ba Reum, comes to face with the killer. While he survives his dangerous encounter with the psychopath, Jung Ba Reum finds his life completely changing. A suspenseful story that asks the key question, What if we could identify psychopaths in advance?",
+            background: "url('mouse.jpg')"
+           },
+		   
+           {title: "Bad and Crazy",
+            rating: 9,
+            runtime: 70,
+            synopsis: "A heroic drama about a competent yet bad guy Soo Yeol who recovers his humanity after meeting K, a righteous but crazy person. Soo Yeol is a competent police officer of the drug squad who only has high school education. Due to his ambitions, he only takes on cases his superiors like and gives them the desired outcome, yet turns a blind eye to some injustice. As the promotion period nears, Soo Yeol with no backing is faced with the crisis of losing his opportunity once again.",
+            background: "url('bad and crazy.jpg')"
+           }
+		];
+
+		function printDramaInfo(element) {
+			if (element.hasWatched)
+				console.log();
+		}
+
+		// console stuff
+		dramaDB.forEach(printDramaInfo);
+
+		dramaDB.forEach(createCard);
+
+		function createCard(element, i){
+		// card
+			var card = document.createElement('div');
+			card.setAttribute("class", "drama-card");
+			card.style.backgroundImage = element.background;
+  
+		// title
+			var title = document.createElement('h1');
+			title.innerText = element.title;
+			card.appendChild(title);
+  
+		// runtime
+			var runtime = document.createElement('span');
+			runtime.innerText = element.runtime + " min";
+			card.appendChild(runtime);
+  
+		// rating
+			var star = document.createElement("i");
+			star.setAttribute("class", "fas fa-star");
+			var rating = document.createElement('span');
+			rating.innerText = element.rating + " ";
+			rating.appendChild(star);
+			card.appendChild(rating);
+  
+		// synopsis
+			var synopsis = document.createElement('p');
+			synopsis.innerText = element.synopsis;
+			card.appendChild(synopsis);
+  
+		
+  
+		document.body.appendChild(card);
+		}
+
+		</script>
+		
+		
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	</body>
+</html>

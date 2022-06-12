@@ -1,0 +1,396 @@
+<html>
+	<head>
+		<title>M Y  K O R E A N  L I F E</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	
+		<style>
+		<!--page 1-->
+		*
+		{
+			font-family:'Lucida Sans';
+			font-weight: bold;
+			color: #ffffff;
+		}
+		
+		.front{
+			position: relative; width: 100%; margin: 0 auto;			
+		}
+		
+		.centerText{
+			color: #FFFFF7;
+			position: absolute;
+			top: 30%; 
+			width: 100%; 
+			font-size: 500%;
+			text-align: center;
+		}
+		
+		body
+		{
+			margin: 0;
+			background:url('food.jpg') center;
+			background-size: cover;
+			width: 100vw;
+			height: 100vh;
+		}
+		
+		a
+		{
+			text-decoration:none;
+			display: inline-block;
+			padding: 5px 10px;
+		}
+		
+		li
+		{
+			list-style: none;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		
+		h2
+		{
+			margin-top: 15px;
+			text-transform: uppercase;
+			margin-left: 20px;
+		}
+		
+		li:hover,.Home
+		{
+			border: 2px solid white;
+		}
+		
+		.navbar
+		{
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		ul
+		{
+			display: flex;
+		}
+
+		.contenu
+		{
+			display: flex;
+			justify-content: center;
+			height: 70%;
+			align-items: center;
+
+		}
+
+		article
+		{
+			width: 460px;
+			text-align: center;
+		}
+		
+		p
+		{	
+			font-size: 24px;
+		}
+		
+		input
+		{
+			padding: 12px;
+			border: none;
+			margin-bottom: 10px;
+			border-radius: 5px 10px;
+		}
+		
+		input[value="Explore More"]
+		{
+			background-color: teal;
+		}
+		
+		input[value="Watch Videos"]
+		{
+			color: black;
+			background-color: #ffffff;
+		}
+		
+		input[value="Watch Videos"]:hover
+		{	
+			background: linear-gradient(to right,white,rgb(230, 226, 206));  
+		}
+		
+		input[value="Explore More"]:hover
+		{
+			background: linear-gradient(to right,aqua,teal);  
+		}
+		
+		.divTotal
+		{
+		display: none;
+		}
+		
+		<!--page 3-->
+		body {
+			font-family: "Overpass", sans-serif;
+			box-sizing: border-box;
+		}
+
+		.section-header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10px; 
+			background: #2B3044;
+		}
+
+		.section-header h1 {
+			font: 380 38px "Montserrat", sans-serif;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
+		.video-gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+			grid-gap: 15px;
+			max-width: 1100px;
+			padding: 15px; 
+			margin: 0 auto;
+			box-sizing: border-box;
+		}
+
+		.video-gallery .korean-food {
+			position: relative;
+			width: 100%;
+			height: 300px;
+			background: #000;
+			cursor: pointer;
+			overflow: hidden;
+		}
+
+		.video-gallery .korean-food img {
+			position: relative;
+			display: block;
+			width: 115%;
+			height: 300px;
+			object-fit: cover;
+			opacity: .5;
+			
+			
+			/*transition: opacity .35s, transform .35s;*/
+			transition: all 350ms ease-in-out;
+			transform: translate3d(-23px, 0, 0);
+			/*backface-visibility: hidden;*/
+			}
+
+		.north-cascades-img {
+			object-position: 50% 30%;
+		}
+
+		.video-gallery .korean-food .korean-food-caption {
+			padding: 32px;
+			font-size: 1em;
+			color: #fff;
+			text-transform: uppercase;
+		}
+
+		.video-gallery .korean-food .korean-food-caption,
+		.video-gallery .korean-food .korean-food-caption > a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.video-gallery .korean-food h2 {
+			font-weight: 300;
+			overflow: hidden;
+			padding: 12px 0;
+		}
+
+		.video-gallery .korean-foodm h2,
+		.video-gallery .korean-food p {
+			position: relative;
+			margin: 0;
+			z-index: 1;
+			pointer-events: none;
+		}
+
+		.video-gallery .korean-food p {
+			letter-spacing: 1px;
+			font-size: 12px;
+			padding: 12px 0;
+			opacity: 0;
+			transition: opacity 0.35s, transform 0.35s;
+			transform: translate3d(10%, 0, 0);
+			}
+
+		.video-gallery .korean-food:hover img {
+			opacity: 0.3;
+			transform: translate3d(0, 0, 0);
+		}
+
+		.video-gallery .korean-food .korean-food-caption {
+			text-align: left;
+		}
+
+		.video-gallery .korean-food h2::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 15%;
+			height: 1px;
+			background: #fff;
+			transition: transform 0.3s;
+			transform: translate3d(-100%, 0, 0);
+		}
+
+		.video-gallery .korean-food:hover h2::after {
+			transform: translate3d(0, 0, 0);
+		}
+
+		.video-gallery .korean-food:hover p {
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+
+		/*
+		@media screen and (max-width: 784px) {
+			.video-gallery {
+				width: 100%;
+				padding: 15px;    
+
+			}
+			.video-gallery .korean-food {
+				width: 95%;
+				margin: 0 auto; 
+				width: 100%;
+			}
+		}
+		*/
+		
+		#img-div{
+			background: #F0E1E2;
+			font-family: "Sitka Banner";
+		 }
+		
+		</style>
+	
+	</head>
+	
+	
+	<body>
+	<!--page 1-->
+	<header class="navbar">
+		<div class="LOGO"> 
+			<h2><a href="index.html" target="_blanck">하지라 <i class="fa fa-heart-o"></i> ZIRA</a></h2>
+		</div>
+        <nav>
+            <ul>
+                
+                <li><a href = "about.html"><i class="fa fa-user"></i> ABOUT </a></li>
+				<li><a href = "foody.html"><i class="fa fa-fire"></i> FOOD </a></li>
+				<li><a href = "kdrama.html"><i class="fa fa-heartbeat"></i> DRAMA </a></li>
+				<li><a href = "movie.html"><i class="fa fa-cloud"></i> MOVIE </a></li>
+				<li><a href = "registration.html"><i class="fa fa-envelope"></i> JOIN ME! </a></li>
+            </ul>
+        </nav>
+		
+        <div class="divTotal">  
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas"></i>  
+            </label>
+        </div>
+    </header>
+	
+	<!--PAGE 3-->
+	<script>
+	$(document).ready(function () {
+		$(".video-gallery").magnificPopup({
+				delegate: "a",
+				type: "iframe",
+				gallery: {
+					enabled: true
+				}
+		});
+	});
+
+	</script>
+	
+	
+	<div class="content">
+  
+	<div class="section-header">
+		<h1>KOREAN FOOD</h1>  
+	</div>
+	
+	<section>
+		<p id="img-div"> Here I show you the top korean food that I really like and love the most. Because of my love towards korean food, some of the food I know how to make and till now, I always make it whenever I crave. All the food here I already tried to make myself, some is successful but some of it needs more improvement AIGUUU but the most food that I always make is tteokbokki.</p>
+	</section>
+  
+	<div class="video-gallery">
+    
+	<!--Tteokbokki-->
+    <div class="korean-food">
+     <img src="tteokbokki.jpg" alt="Tteokbokki"/>
+      <div class="korean-food-caption">
+        <!--<div>-->
+          <h2>Tteok-bokki : Spicy Stir-fried Rice Cake</h2>
+          <p>Tteokbokki is ont of the most popular Korean street foods in korea. Also, it comes in almost endless variations. As an example, there is non-spicy tteokbokki or we called it Ganjang tteokbokki. It is suitable
+		   for someonw who can't handle well of spicy food. Next is rabokki. Rabokki is a combined words of ramen or ramyun + tteokbokki. The instant noodles are an additional bonus for volume, flavor and texture.</p>
+		  <p> (CLICK ME)  </p>
+		<!--</div>-->
+        <a class="vimeo-popup" href="https://www.youtube.com/watch?v=JgTHlfW0SF8"></a>
+      </div>
+    </div>
+
+    <!--Hotteok-->
+    <div class="korean-food">
+     <img src="heotteok.jpg" alt="hotteok"/>
+      <div class="korean-food-caption">
+        <!--<div>-->
+          <h2>Hotteok</h2>
+          <p>Hotteok is a flour dough pancake filled with sugar syrup inside. It’s one of the most popular street snacks in Korea. It would be more nice if a hot hot hotteok with sizzling golden syrup enjoy with a glass of milk. </p>
+		  <p> (CLICK ME)  </p>
+        <!--</div>-->
+        <a class="vimeo-popup" href="https://www.youtube.com/watch?v=eAEc-lnIQhw"></a>
+      </div>
+    </div>
+    
+    <!--Sundubu Jiggae-->
+    <div class="korean-food">
+     <img src="sundubu.jpg" alt="sundubu"/>
+      <div class="korean-food-caption">
+        <!--<div>-->
+          <h2>Sundubu Jiggae</h2>
+          <p>Sundubu jiggae is a korean stew made with soft tofu as a highlight ingredient. There are so many different ways on how to make it, one of it is the seafood version known as Haemul Sundubu Jjigae. Nonetheless, it's a refreshing, delicious and very comforting stew for everyone to try and enjoy.</p>
+		  <p> (CLICK ME)  </p>
+        <!--</div>-->
+        <a class="vimeo-popup" href="https://www.youtube.com/watch?v=itUDRx9vcb0"></a>
+      </div>
+    </div>
+	
+	<!--Bungeo-Ppang-->
+    <div class="korean-food">
+     <img src="bungeoppang.jpg" alt="bungeoppang"/>
+      <div class="korean-food-caption">
+        <!--<div>-->
+          <h2>Bungeo-Ppang : Korean Fish Shaped Pastry</h2>
+          <p>Bungoeppang is a korean name for Japanese taiyaki, a fish shaped pastry that is particularly popular in winter streets of korea. This fish shaped pastry are often filled with something inside. During the old days, red bean paste is the only available fillings, but nowdays it have more choices to choose.</p>
+		  <p> (CLICK ME)</p>
+        <!--</div>-->
+        <a class="vimeo-popup" href="https://www.youtube.com/watch?v=0AdF0YdPiWs"></a>
+      </div>
+    </div>
+
+    
+    
+ 
+
+	</div>
+	</div>
+	
+	</body>
+</html>

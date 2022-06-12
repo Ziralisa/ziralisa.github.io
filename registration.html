@@ -1,0 +1,317 @@
+<html>
+	<head>
+		<title>M y   K o r e a n   L o v e </title>
+		
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+		<!--page 1-->
+		#head
+		{
+			font-family:'Lucida Sans';
+			font-weight: bold;
+			color: #FFFFFF;
+		}
+		
+		.front{
+			position: relative; width: 100%; margin: 0 auto;			
+		}
+		
+		.centerText{
+			color: #FFFFF7;
+			position: absolute;
+			top: 30%; 
+			width: 100%; 
+			font-size: 500%;
+			text-align: center;
+		}
+		
+		body
+		{
+			margin: 0;
+			background:url('lamp.jpg') center ;
+			background-size: cover;
+			width: 100vw;
+			height: 100vh;
+		}
+		
+		a
+		{
+			text-decoration:none;
+			display: inline-block;
+			padding: 5px 10px;
+		}
+		
+		li
+		{
+			list-style: none;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		
+		h2
+		{
+			margin-top: 15px;
+			text-transform: uppercase;
+			margin-left: 20px;
+		}
+		
+		li:hover,.Home
+		{
+			border: 2px solid white;
+		}
+		
+		.navbar
+		{
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		ul
+		{
+			display: flex;
+		}
+
+		.contenu
+		{
+			display: flex;
+			justify-content: center;
+			height: 70%;
+			align-items: center;
+
+		}
+
+		article
+		{
+			width: 460px;
+			text-align: center;
+		}
+		
+		p
+		{	
+			font-size: 24px;
+		}
+		
+		input
+		{
+			padding: 12px;
+			border: none;
+			margin-bottom: 10px;
+			border-radius: 5px 10px;
+		}
+		
+		input[value="Explore More"]
+		{
+			background-color: teal;
+		}
+		
+		input[value="Watch Videos"]
+		{
+			color: black;
+			background-color: #ffffff;
+		}
+		
+		input[value="Watch Videos"]:hover
+		{	
+			background: linear-gradient(to right,white,rgb(230, 226, 206));  
+		}
+		
+		input[value="Explore More"]:hover
+		{
+			background: linear-gradient(to right,aqua,teal);  
+		}
+		
+		.divTotal
+		{
+			display: none;
+		}
+		
+		<!--header-->
+		#title{
+			align-self: center;
+			text-align: center;
+			font-family: "Segoe Print";
+			font-size: 50px;
+			background-color: #E79A9C;
+			
+		}
+		
+		#main{
+			text-align: center;
+			font-size: 25px;
+			
+	
+		}
+		
+		.section-header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 8px; 
+			background: #F67280;
+		}
+		
+		<!--error message-->
+		function validateForm() {
+			var x = document.forms["myForm"]["name"]["gmail"]["kfoodfav"]["fshow"]["favAct"]["fgenre"]["yearJoin]["Desc"].value;
+			if (x == "") {
+				alert("You need to enter all the form given ^^");
+				return false;
+			}
+		}
+		
+		</style>
+	</head>
+
+	<body>
+			
+		<!--page 1-->
+		<header class="navbar" id="head">
+		<div class="LOGO"> 
+			<h2><a href="index.html" target="_blanck">하지라 <i class="fa fa-heart-o"></i> ZIRA</a></h2>
+		</div>
+		
+        <nav>
+            <ul>
+                
+                <li><a href = "about.html"><i class="fa fa-user"></i> ABOUT </a></li>
+				<li><a href = "foody.html"><i class="fa fa-fire"></i> FOOD </a></li>
+				<li><a href = "kdrama.html"><i class="fa fa-heartbeat"></i> DRAMA </a></li>
+				<li><a href = "movie.html"><i class="fa fa-cloud"></i> MOVIE </a></li>
+				<li><a href = "registration.html"><i class="fa fa-envelope"></i> JOIN ME! </a></li>
+            </ul>
+        </nav>
+		
+        <div class="divTotal">  
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas"></i>  
+            </label>
+        </div>
+		</header>
+	
+		<!--header-->
+		<main id="main">
+			<h1 class="section-header"> Let Me Know You Too! </h1>
+			
+		</main>
+		
+		<center>
+		<h6>
+		<!--forms-->
+		<form name="myForm" action="/action_page.php" onsubmit="returnValidateForm()" method="post" required>
+			<!--textbox-->
+			<blockquote>
+				<p style = 'color:black; font-size: 200%;'>
+					<label for = 'name'>Name :</label></br>
+						<input type = 'text' id = 'name' name = 'name' size='35'><br>
+					<label for = 'gmail'>Gmail :</label></br>
+						<input type = 'text' id = 'gmail' name = 'gmail' size='25'><br>
+					<label for = 'kfoodfav'>Favourite Korean Food :</label></br>
+						<input type = 'text' id = 'kfoodfav' name = 'kfoodfav' size='20'><br>
+					</blockquote>
+				</p>
+
+			<!--radio button-->
+			<blockquote>
+				<p style = 'color:black; font-size: 200%;'>
+					<label for = 'fshow'>Favourite korean show all the time :</label></br>
+					<input type = 'radio' id = 'name' name = 'fav_show' value = 'Variety Show'>
+					<label for = 'Variety Show'>Variety Show</label><br>
+					<input type = 'radio' id = 'name' name = 'fav_show' value = 'Movie'>
+					<label for = 'Movie'>Movie</label><br>
+					<input type = 'radio' id = 'name' name = 'fav_show' value = 'Drama'>
+					<label for = 'Drama'>Drama</label><br>
+				</p>
+			</blockquote>
+			
+			<!--textbox-->
+			<blockquote>
+				<p style = 'color:black; font-size: 200%;'>
+					<label for = 'favact'>The most Favourite Actor or Actress :</label></br>
+						<input type = 'text' id = 'fav actor or actress' name = 'favAct' size='20'><br>
+					</blockquote>
+				</p>
+			
+			<!--check box-->
+			<blockquote>
+				<p style = 'color:black; font-size: 200%;' >
+				<label for = 'fgenre'>Favourite Genre :</label></br>
+				<input type = 'checkbox' id = 'genre1' name = 'genre1' value = 'Horror'>
+				<label for = 'genre1'> Horror</label><br>
+
+				<input type = 'checkbox' id = 'genre2' name = 'genre2' value = 'Action'>
+				<label for = 'genre2'> Action</label><br>
+
+				<input type = 'checkbox' id = 'genre3' name = 'genre3' value = 'Romance'>
+				<label for = 'genre3'> Romance</label><br>
+
+				<input type = 'checkbox' id = 'genre4' name = 'genre4' value = 'Comedy'>
+				<label for = 'genre4'> Comedy</label><br>
+
+				<input type = 'checkbox' id = 'genre5' name = 'genre5' value = 'Thiller'>
+				<label for = 'genre5'> Thiller</label><br>
+			</p>
+			</blockquote>
+			
+			<!--drop down list control-->
+			<blockquote>
+				<p style = 'color:black; font-size: 200%;' >
+				<label for = 'yearJoin'>Since when you started interested in Korean Culture? :</label></br>
+				<select name="year">
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+					<option value="2019">2019</option>
+					<option value="I am newbie">I am newbie</option>
+					<option value="I am newbie">I am your Senior</option>
+				</select>
+			</blockquote>
+			
+			<!--textbox-->
+			<blockquote>
+				<p style = 'color:black; font-size: 200%;'>
+					<label for = 'desc'>What makes you still in love with Korean culture till now? :</label></br>
+						<textarea rows="5" cols="50" name="desc">Write here...</textarea>
+					</blockquote>
+				</p>
+			
+			<!--drop down list control-->
+			<blockquote>
+				<p style = 'color:black; font-size: 200%;' >
+				<label for = 'Interest'>Did it ever cross your mind to visit Korea one day? Will you go there?: </label></br>
+				<select name="answer">
+					<option value="Yes of course">Yes of course!</option>
+					<option value="2012">When I have money</option>
+					<option value="2013">Still in high school </option>
+					<option value="2014">Need sugar daddy first</option>
+					<option value="2015">Sure. Give me money</option>
+				</select>
+			</blockquote>
+			
+			
+			<input type = 'submit' value = 'submit'> <input type = 'submit' value = 'clear'>
+			
+		</form>
+		<br>
+		<h3>Visit me here!</h3>
+		<table style="width:7%">
+			<tr>
+				<td><p><a href="https://instagram.com/zrjzra_02?igshid=YmMyMTA2M2Y=" style="background-color:#CCFFFF;">
+				<img src="instagram.jpg" width="40" height="40"></a></p></td>
+				<td><p><a href="https://vt.tiktok.com/ZSdnrBGcf/" style="background-color: #CCFFFF;">
+				<img src="tiktok.jpg" width="40" height="40"></a></p></td>
+			</tr>
+		
+		</center>
+		</h6>
+		
+	</body>
+</html>
